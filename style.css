@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #185a81, #4e5174);
+  color: white;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size:  1.5rem;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header,form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input, form button {
+  padding:  0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  border-radius: 2px;
+}
+
+form button {
+  color: #1c067e;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #567bd1;
+  color: white;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo  {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition:all 0.5 ;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.complete-btn,
+.reject-btn{
+  background: #13036d;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.reject-btn {
+  background:rgb(32, 54, 151);
+
+}
+
+.todo-item {
+  padding: 0rem 0.3rem;
+}
+
+.fa-trash, .fa-check {
+  pointer-events: none;
+}
+.completed {
+  text-decoration: line-through;
+  opacity:0.5 ;
+}
+
+
